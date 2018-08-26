@@ -1,0 +1,121 @@
+
+img.icon {
+  width: 32px;
+  background-color: transparent;
+}
+
+:global(#app) {
+  padding: 0px;
+  width: 100%;
+  max-height: 100vh;
+}
+
+:global(#loader) {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  animation: spin 1s infinite linear;
+  top: 50%;
+  left: 50%;
+  margin-top: -32px;
+  margin-left: -32px;
+  display: block;
+}
+
+:global(#wrapper) {
+  max-height: 100vh;
+}
+
+:global(#channel-info) {
+  position: fixed;
+  padding: 0.5em;
+  top: 0px;
+  right: 0px;
+  border: 1px solid #555;
+  background-color: #333;
+}
+
+:global(#buttons) {
+  text-align: right;
+  background-color: #333;
+}
+
+:global(.left) {
+  float: left;
+}
+
+:global(#message-area) {
+  display: flex;
+  flex-direction: column;
+}
+
+:global(#messages) {
+  flex: 1;
+  padding: 0em 0.5em;
+  margin: 2.5em 0em;
+  height: 100%;
+  overflow: auto;
+}
+
+:global(#channels) {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
+
+:global(#messages .time, .who, .message) {
+  margin-right: 0.25em;
+}
+
+:global(#messages .who) {
+  color: #666;
+  width: 5em;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+:global(#messages > div > *) {
+  vertical-align: top;
+}
+
+:global(#messages .message) {
+  margin: 0px;
+  margin-left: 0.5em;
+  display: inline-block;
+}
+
+:global(#input) {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
+
+:global(#input form) {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+:global(input) {
+  flex: 1;
+  border: none;
+  background-color: #333;
+  padding: 0.25em 0.5em;
+}
+
+:global(button#send) {
+  border: none;
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+}
+
+:global(#fin) {
+  position: absolute;
+  top: 50%;
+  margin-top: -1em;
+  display: block;
+  width: 100%;
+  text-align: center;
+}

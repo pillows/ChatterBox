@@ -1,0 +1,9 @@
+{
+    "type": "sftp",
+    "host": "talos.feralhosting.com",
+    "username": "pillows",
+    "password": "",
+    "port": 22,
+    "remotePath": "/media/a3ae/pillows/react-starter/src/",
+    "uploadOnSave": false
+}
